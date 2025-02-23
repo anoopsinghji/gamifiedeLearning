@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .profile-card {
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(20, 19, 19, 0.1);
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="Home.html">
+            <img src="../IMG/logo1.jpg" alt="eLearning Logo" height="40"> NPS eLearning
+        </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                      <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Dashboard.html">Leaderboard</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="challengesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Challenges</a>
+                        <ul class="dropdown-menu" aria-labelledby="challengesDropdown">
+                            <li><a class="dropdown-item" href="Math_challenges.html">Math Challenges</a></li>
+                            <li><a class="dropdown-item" href="English_Challenges.html">English Challenges</a></li>
+                            <li><a class="dropdown-item" href="Science_challenges.html">Science Challenges</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="aboutUS.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="#">Login/Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="text-center">About Me</h1>
+        <div class="profile-card bg-light p-4">
+            <img src="../IMG/anoop.png" class="profile-img" alt="Your Photo">
+            <h3>Anoop Singh</h3>
+            <p><strong>University:</strong> Lovely Professional University, Punjab</p>
+            <p><strong>Registration Number:</strong>12302545</p>
+            <p><strong>Year:</strong> Second</p>
+            <p><strong>Department:</strong>School of Computer Application</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

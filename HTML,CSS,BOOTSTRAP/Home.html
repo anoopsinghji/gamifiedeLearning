@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eLearning Platform</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .hero-section {
+            position: relative;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            padding: 80px 20px;
+        }
+
+        .course-card {
+            transition: transform 0.3s;
+        }
+
+        .course-card:hover {
+            transform: scale(1.05);
+        }
+
+        .xp-badge {
+            background-color: #ffc107;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .top-courses {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .top-courses img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .leaderboard {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .pagination {
+            justify-content: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="Home.html">
+                <img src="../IMG/logo1.jpg" alt="eLearning Logo" height="40"> NPS eLearning
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <li class="nav-item"><a class="nav-link" href="Courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Dashboard.html">Leaderboard</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="challengesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Challenges</a>
+                        <ul class="dropdown-menu" aria-labelledby="challengesDropdown">
+                            <li><a class="dropdown-item" href="Math_challenges.html">Math Challenges</a></li>
+                            <li><a class="dropdown-item" href="English_Challenges.html">English Challenges</a></li>
+                            <li><a class="dropdown-item" href="Science_challenges.html">Science Challenges</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="#">Login/Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Learn, Play & Grow – The Future of eLearning!</h1>
+            <p>Interactive courses, exciting challenges, and rewards await you!</p>
+            <a href="Courses.html" class="btn btn-warning btn-lg">Start Learning</a>
+        </div>
+    </section>
+
+    <!-- Top Courses -->
+    <section class="top-courses container">
+        <h2>Top Courses</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="../IMG/what is.png" class="card-img-top" alt="Course 1">
+                    <div class="card-body">
+                        <h5 class="card-title">What is Grammar</h5>
+                        <span class="xp-badge">Earn 200 XP</span>
+                        <a href="#" class="btn btn-primary d-block mt-2">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="../IMG/science.png" class="card-img-top" alt="Course 2">
+                    <div class="card-body">
+                        <h5 class="card-title">One Hand Science</h5>
+                        <span class="xp-badge">Earn 150 XP</span>
+                        <a href="#" class="btn btn-primary d-block mt-2">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="../IMG/chemistry.png" class="card-img-top" alt="Course 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Chemistry with Khan Sir</h5>
+                        <span class="xp-badge">Earn 100 XP</span>
+                        <a href="#" class="btn btn-primary d-block mt-2">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard -->
+    <section class="leaderboard container">
+        <h2>Leaderboard</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Student</th>
+                    <th>XP Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Anoop Singh</td>
+                    <td>5000 XP</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Priya Singh</td>
+                    <td>4500 XP</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ravi </td>
+                    <td>4000 XP</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Aadi Verma</td>
+                    <td>3500 XP</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Pagination -->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="Home.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="Courses.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="Dashboard.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="Courses.html">Next</a></li>
+        </ul>
+    </nav>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; Anoop Singh // Reg No- 12302545</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
